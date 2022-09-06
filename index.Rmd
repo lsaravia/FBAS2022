@@ -27,6 +27,7 @@ xaringanExtra::use_scribble()
 ###  National Council for Scientific and Technical Research [ CONICET ]
 ###  Austral Center for Scientific Research [CADIC]  
 #### 2022/09/07
+.small[ Slides available at https://lsaravia.github.io/FBAS2022]
 
 ---
 class:  center, middle, inverse
@@ -387,9 +388,9 @@ class:  center, top
 
 .pull-right[
 
-[Leonardo Saravia [CADIC] ]()
+[Leonardo Saravia [CADIC] ](https://www.researchgate.net/profile/Leonardo-Saravia)
 
-[Maria Piotto [UNC]](<a href="https://twitter.com/intent/tweet?screen_name=m_piotto&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @m_piotto</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>)
+[Maria Piotto [UNC]]()
 
 [Iara Rodriguez [UNGS] ](https://www.researchgate.net/profile/Iara-Rodriguez-2)
 
