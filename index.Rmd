@@ -1,0 +1,409 @@
+---
+title: Critical transitions and early warnings in global forest
+output:
+  xaringan::moon_reader:
+    seal: false
+    css:
+      - default-fonts
+      - css/leo.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: true
+      countdown: 60000
+---
+class:  center, middle
+background-image: url("Figures/CADIClogo.png")
+background-size: 120px
+background-position: 5% 5%
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+#xaringanExtra::use_webcam()
+```
+
+# Critical transitions and early warnings in global forest
+## Leonardo A. Saravia
+###  National Council for Scientific and Technical Research [ CONICET ]
+###  Austral Center for Scientific Research [CADIC]  
+#### 2022/09/07
+
+---
+class:  center, middle, inverse
+background-image: url(Figures/Deforestation.jpg)
+background-size: contain
+
+---
+class:  center, middle, inverse
+background-image: url(Figures/DeforestationDark.jpg)
+background-size: contain
+
+# Global Forest as a Complex systems
+
+--
+
+
+## Complex systems: emergent behavior
+--
+
+### Could not be explained by the behavior of their components
+
+--
+
+### Global forest: these methods can be applied to forests at any place on the earth
+
+???
+
+* I think about forest as a complex system and I talk about global forest
+* Because these methods to determine critical can be applied to any place on earth
+* Whicht is the main characteristic of complex systems?
+* It is emergent behavior 
+* the system could react in ways that are not easily predicted by the behavior of the components
+
+---
+class:  center, middle, inverse
+
+## Critical transitions
+
+--
+### Sudden change of the state of the system
+
+--
+### Very large areas provides a better scale to detect critical transitions 
+
+--
+### because local heterogeneities could be averaged
+
+--
+### we started with a simple model with two states
+
+
+???
+
+One of these emergent phenomena are critical transitions 
+which produces a sudden change of the state of the system
+is important to mention that ...
+
+---
+## A two-state simple forest model 
+
+
+.center[
+<img src="Figures/ForestModelDelta.png" width="70%">
+]
+
+--
+.center[
+<img src="Figures/ForestModelLambda.png" width="70%">
+]
+
+
+---
+## A two-state simple forest model 
+
+.center[
+<img src="Figures/Lambda3-1.5_100.gif" width="70%">
+]
+
+--
+.pull-left[ 
+### There are two posible state changes 
+
+]
+
+--
+.pull-right[
+#### 1) Connected forest to fragmented forest
+#### 2) Forest to non-forest
+]
+
+???
+In this simple forest model we have forest and non-forest or empty sites
+
+The state of the system changes with a control parameterr the growth rate called lambda
+
+We have two possible state changes for the system, forest survival, forest extinction
+and a third state that is fragmented forest.
+
+So we start from lambda 3 to 2.5, we are simulating that the forest can grow less, 
+then from 2.5 to 2.0, the unexpected change is from 2.0 to 1.5 because the system
+collapses and the forest go extinct.
+
+
+---
+
+## There are two posible state changes 
+
+.center[
+<img src="Figures/plot_23.svg" width="70%">
+]
+
+???
+From 2.5 to 2.0 we have an additional change, we go from a connected forest
+to a fragmented forest. 
+
+---
+
+## From connected forest 
+
+.center[
+<img src="Figures/plot_25.svg" width="70%">
+]
+
+---
+
+## To fragmented forest
+
+.center[
+<img src="Figures/plot_27.svg" width="70%">
+]
+
+---
+
+## To non-forest (extinction)
+
+.center[
+<img src="Figures/plot_28.svg" width="70%">
+]
+
+---
+
+## Percolation theory
+
+.pull-left[
+* Connected forest 
+<img src="Figures/Percolation.png" width="90%">
+]
+
+--
+
+.pull-right[
+* Fragmented forest
+<img src="Figures/PercolationUnconnected.png" width="90%">
+]
+
+---
+
+class:  center, inverse
+
+## Percolation theory
+
+--
+### As the forest is lost 
+
+--
+### the state change from connected to fragmented 
+
+--
+### Reachable habitat for species is now less than the habitat available.
+
+--
+### Is an abrupt change 
+
+--
+### How to detect if this change is about to happen?
+
+---
+class:  center, inverse
+
+## Largest patch dynamics 
+
+<img src="Figures/MaxPatchLambda3-1.5.gif" width="80%">
+
+---
+class:  center, inverse
+
+## Largest patch dynamics 
+
+
+<img src="Figures/MaxPatchSizeLambda3.5-1.5.gif" width="80%">
+
+---
+class:  center, inverse
+
+## Largest patch fluctuations 
+
+<img src="Figures/DeltaSmax3.5-1.5.gif" width="80%">
+
+???
+One way to detect the fragmentation transitions is to watch the fluctuations 
+of the largest patch, if the fluctuations are small we are far from the critical transitions
+if the fluctuations are large we are probabily near a critical point
+
+
+---
+
+background-image: url(Figures/JaguarFire.jpg)
+background-size: contain
+
+---
+class:  center, middle, inverse
+
+background-image: url(Figures/JaguarFireDark.jpg)
+background-size: contain
+
+# Critical Global Forest 
+
+---
+background-image: url(Figures/Saravia2018SciRep.png)
+background-size: contain
+
+???
+
+We applied these ideas to continental regions around the globe
+---
+class:  center, middle
+
+## Early warnings of fragmentation 
+
+--
+
+### We use remote sensing data (MODIS Vegetation Continuous Fields) 
+
+--
+
+### To calculate the fluctuations of the largest patch $RS_{max}$ relative to the total forest area
+
+--
+
+### We defined big continental regions (greater than 10 millons Km²)
+
+--
+### We used different forest % thresholds to determine patch sizes 
+
+---
+class:  center, middle, inverse
+
+## Early warnings of fragmentation 
+
+--
+### A combination of spatial and temporal indicators is more reliable 
+
+--
+### When the forest its closer to a critical transition
+
+--
+### The size $RS_{max}$ tends to get smaller
+
+--
+### Increase its variance
+
+--
+### The variation $\Delta RS_{max}$ is biased towards lower values
+
+---
+## Largest and second largest patch dynamics
+
+.center[
+<img src="Figures/southasia_SEAS_1_30_perc_threshold_in_MOD44B_Top_2_gmap.gif" width="70%">
+]
+
+---
+## Largest patch dynamics
+
+.center[
+<img src="Figures/RSmax_gt1e7_ByYearThreshold_facet.png" width="60%">
+]
+
+.small[
+The regions are AF1: Africa mainland, EUAS1: Eurasia mainland, NA1: North America mainland, SAST1: South America tropical and subtropical, SEAS1: Southeast Asia mainland
+]
+
+---
+class:  center, middle
+
+## Early warnings of fragmentation
+
+<img src="Figures/TablaIndicadores.png" width="90%">
+
+
+---
+class:  center, middle
+
+## Regions near a critical transition 
+
+--
+### South America tropical and subtropical (SAST1)
+
+--
+### Southeast Asia mainland (SEAS1) 
+
+--
+### Africa mainland (AF1) met all criteria at least for one threshold
+
+--
+### these regions generally experience the biggest rates of deforestation with a significant increase in loss of forest
+
+
+---
+
+background-image: url(Figures/JaguarFire.jpg)
+background-size: contain
+
+---
+class:  center, middle, inverse
+
+background-image: url(Figures/JaguarFireDark.jpg)
+background-size: contain
+
+# Sustainable Development Goals
+
+---
+class:  center, middle, inverse
+
+
+# Sustainable Development Goals
+
+--
+### Sustainably manage forests, halt and reverse land degradation, halt biodiversity loss
+
+--
+## This framework could be applied to forest 
+
+--
+### And other vegetations kinds 
+
+--
+# To detect degradation 
+
+--
+## And to monitor restoration
+
+--
+### To smaller regions with higher resolutions sensors
+
+---
+class:  center, top
+
+## Ecology and Complex Systems Lab 
+
+.pull-left[
+
+<img src="Figures/Ecomplex_logo.png" width="80%">
+
+<a href="https://twitter.com/ecomplex_lab?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ecomplex_lab</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
+
+
+.pull-right[
+
+[Leonardo Saravia [CADIC] ]()
+
+[Maria Piotto [UNC]](<a href="https://twitter.com/intent/tweet?screen_name=m_piotto&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @m_piotto</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>)
+
+[Iara Rodriguez [UNGS] ](https://www.researchgate.net/profile/Iara-Rodriguez-2)
+
+[Nicolas Velazco [UNLu]](https://www.researchgate.net/profile/Victor-Velazco)
+
+[Tomas Marina [CADIC]](https://www.researchgate.net/profile/Tomas-Marina)
+
+[Georgina Cordone [CENPAT]](https://www.researchgate.net/profile/Georgina-Cordone)
+
+[Santiago Doyle [UNGS]](https://www.researchgate.net/profile/Santiago-Doyle)
+
+[Vanesa Salinas [UNGS]](https://www.researchgate.net/profile/Vanesa-Salinas-2)
+
+[Fernando Momo[UNGS]](https://www.researchgate.net/profile/Fernando-Momo)
+]
+
+
